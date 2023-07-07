@@ -409,7 +409,7 @@ function saveTask7(){
 }
 
 // call function
-saveTask7();
+saveTask();
 
 // function will allow to delete or cross out a tast
 foodList8 .addEventListener("click", function(e){
