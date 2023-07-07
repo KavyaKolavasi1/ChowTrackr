@@ -1,25 +1,29 @@
-.container{
-    background:linear-gradient(135deg,#77bcce,#c6cf4aa9);
-    width: 100%;
-    height: 100vh;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+*{
+    padding:0;
+    margin: 0;
 
 }
+
 nav{
-    background: white;
-    border-radius: 50px;
-    padding: 10px;
-    box-shadow: 0 25px 20px -10px rgba(0,0,0,0,4);
+    background: rgb(47, 17, 214);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul{
+    float:right;
+    margin-right: 20px
 }
 nav ul li{
-    list-style: none;
     display: inline-block;
-    padding:13px 35px;
-    margin: 10px;
-    font-size: 20 px;
-    font-weight: 400;
-    color: #777;
-    cursor: pointer;
+    line-height: 80px;
+    margin: 0 5 px;
+    color: white;
+    font-size: 20px;
 }
+
+
+
+
+
+
