@@ -7,11 +7,16 @@
 
 }
 
+body{
+    background: linear-gradient(135deg,#77bcce,#c6cf4aa9);
+}
+
 .navbar{
-    background: rgb(47, 17, 214);
+    background: rgb(41, 131, 138);
     height: 80px;
     width: 100%;
     font-family: calibri;
+    border-radius: 10px;
 }
 
 .navdiv{
@@ -20,19 +25,19 @@
     justify-content: space-between;
 }
 
-.logo a{
+.logo {
     font-size:  50px;
     font-weight: 400;
     color: white;
     margin-left: 25px;
 }
 
-li{
+.navbar li{
     list-style: none;
     display: inline-block;
 }
 
-li a{
+.navbar li a{
    color:white;
    font-size: 30px;
    font-weight: bold;
@@ -40,7 +45,7 @@ li a{
 
 }
 
-li a:hover{
+.navbar li a:hover{
     background: none;
     color: gray;
 

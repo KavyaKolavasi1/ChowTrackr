@@ -245,7 +245,7 @@ button{
     border-radius: 40px;
 }
 
-ul li{
+.wrapper1 ul li {
     list-style:none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -256,7 +256,57 @@ ul li{
 }
 
 
-ul li::before{
+.wrapper1 li::before{
+    content: '';
+    position: absolute;
+    height:28px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/image2.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+
+}
+
+.wrapper2 ul li {
+    list-style:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative
+
+}
+
+
+.wrapper2 li::before{
+    content: '';
+    position: absolute;
+    height:28px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/image2.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+
+}
+
+.wrapper3 ul li {
+    list-style:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative
+
+}
+
+
+.wrapper3 li::before{
     content: '';
     position: absolute;
     height:28px;
@@ -294,3 +344,44 @@ ul li span:hover{
     background: #edeef0 ;
 }
 
+
+.navbar{
+    background: rgb(41, 131, 138);
+    height: 80px;
+    width: 100%;
+    font-family: calibri;
+    border-radius: 10px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size:  50px;
+    font-weight: 400;
+    color: white;
+    margin-left: 25px;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar li a{
+   color:white;
+   font-size: 30px;
+   font-weight: bold;
+   margin-right: 100px;
+   text-decoration: none;
+
+}
+
+.navbar li a:hover{
+    background: none;
+    color: gray;
+
+}

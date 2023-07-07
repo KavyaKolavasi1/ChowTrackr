@@ -255,12 +255,12 @@ foodList2 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask2(){
-    localStorage.setItem("data",foodList2 .innerHTML);
+    localStorage.setItem("data2",foodList2 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask2(){
-    foodList2 .innerHTML = localStorage.getItem("data");
+    foodList2 .innerHTML = localStorage.getItem("data2");
 }
 
 // call function
@@ -284,12 +284,12 @@ foodList3 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask3(){
-    localStorage.setItem("data1",foodList3 .innerHTML);
+    localStorage.setItem("data3",foodList3 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask3(){
-    foodList3 .innerHTML = localStorage.getItem("data1");
+    foodList3 .innerHTML = localStorage.getItem("data3");
 }
 
 // call function
@@ -313,12 +313,12 @@ foodList4 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask4(){
-    localStorage.setItem("data1",foodList4 .innerHTML);
+    localStorage.setItem("data4",foodList4 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask4(){
-    foodList4 .innerHTML = localStorage.getItem("data1");
+    foodList4 .innerHTML = localStorage.getItem("data4");
 }
 
 // call function
@@ -342,12 +342,12 @@ foodList5 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask5(){
-    localStorage.setItem("data1",foodList5 .innerHTML);
+    localStorage.setItem("data5",foodList5 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask5(){
-    foodList5 .innerHTML = localStorage.getItem("data1");
+    foodList5 .innerHTML = localStorage.getItem("data5");
 }
 
 // call function
@@ -371,12 +371,12 @@ foodList6 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask6(){
-    localStorage.setItem("data1",foodList6 .innerHTML);
+    localStorage.setItem("data6",foodList6 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask6(){
-    foodList6 .innerHTML = localStorage.getItem("data1");
+    foodList6 .innerHTML = localStorage.getItem("data6");
 }
 
 // call function
@@ -400,16 +400,16 @@ foodList7 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask7(){
-    localStorage.setItem("data1",foodList7 .innerHTML);
+    localStorage.setItem("data7",foodList7 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask7(){
-    foodList7 .innerHTML = localStorage.getItem("data1");
+    foodList7 .innerHTML = localStorage.getItem("data7");
 }
 
 // call function
-saveTask();
+saveTask7();
 
 // function will allow to delete or cross out a tast
 foodList8 .addEventListener("click", function(e){
@@ -429,12 +429,12 @@ foodList8 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask8(){
-    localStorage.setItem("data1",foodList8 .innerHTML);
+    localStorage.setItem("data8",foodList8 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask8(){
-    foodList8 .innerHTML = localStorage.getItem("data1");
+    foodList8 .innerHTML = localStorage.getItem("data8");
 }
 
 // call function
@@ -458,12 +458,12 @@ foodList9 .addEventListener("click", function(e){
 
 // show the content to be saved in the browser
 function maintainTask9(){
-    localStorage.setItem("data1",foodList9 .innerHTML);
+    localStorage.setItem("data9",foodList9 .innerHTML);
 }
 
 //show the content to be saved in the browser
 function saveTask9(){
-    foodList9 .innerHTML = localStorage.getItem("data1");
+    foodList9 .innerHTML = localStorage.getItem("data9");
 }
 
 // call function
