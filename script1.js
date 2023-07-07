@@ -161,7 +161,7 @@ function inputFood7() {
 
   // Create a function for the second food order section
 function inputFood8() {
-    if (nameBo8.value === '') {
+    if (nameBox8.value === '') {
       alert("Please write something!");
     } else {
       let li = document.createElement("li");
@@ -294,3 +294,177 @@ function saveTask3(){
 
 // call function
 saveTask3();
+
+// function will allow to delete or cross out a tast
+foodList4 .addEventListener("click", function(e){
+    // if LI is clicked, toggle the checked css to turn on and off
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle("completebox");
+        // save the data so information will be saved after refreshing
+        maintainTask4()
+    }
+    // if span (x) is clicked, remove task
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        // save the data so information will be saved after refreshing
+        maintainTask4()
+    }
+}, false);
+
+// show the content to be saved in the browser
+function maintainTask4(){
+    localStorage.setItem("data1",foodList4 .innerHTML);
+}
+
+//show the content to be saved in the browser
+function saveTask4(){
+    foodList4 .innerHTML = localStorage.getItem("data1");
+}
+
+// call function
+saveTask4();
+
+// function will allow to delete or cross out a tast
+foodList5 .addEventListener("click", function(e){
+    // if LI is clicked, toggle the checked css to turn on and off
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle("completebox");
+        // save the data so information will be saved after refreshing
+        maintainTask5()
+    }
+    // if span (x) is clicked, remove task
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        // save the data so information will be saved after refreshing
+        maintainTask5()
+    }
+}, false);
+
+// show the content to be saved in the browser
+function maintainTask5(){
+    localStorage.setItem("data1",foodList5 .innerHTML);
+}
+
+//show the content to be saved in the browser
+function saveTask5(){
+    foodList5 .innerHTML = localStorage.getItem("data1");
+}
+
+// call function
+saveTask5();
+
+// function will allow to delete or cross out a tast
+foodList6 .addEventListener("click", function(e){
+    // if LI is clicked, toggle the checked css to turn on and off
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle("completebox");
+        // save the data so information will be saved after refreshing
+        maintainTask6()
+    }
+    // if span (x) is clicked, remove task
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        // save the data so information will be saved after refreshing
+        maintainTask6()
+    }
+}, false);
+
+// show the content to be saved in the browser
+function maintainTask6(){
+    localStorage.setItem("data1",foodList6 .innerHTML);
+}
+
+//show the content to be saved in the browser
+function saveTask6(){
+    foodList6 .innerHTML = localStorage.getItem("data1");
+}
+
+// call function
+saveTask6();
+
+// function will allow to delete or cross out a tast
+foodList7 .addEventListener("click", function(e){
+    // if LI is clicked, toggle the checked css to turn on and off
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle("completebox");
+        // save the data so information will be saved after refreshing
+        maintainTask7()
+    }
+    // if span (x) is clicked, remove task
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        // save the data so information will be saved after refreshing
+        maintainTask7()
+    }
+}, false);
+
+// show the content to be saved in the browser
+function maintainTask7(){
+    localStorage.setItem("data1",foodList7 .innerHTML);
+}
+
+//show the content to be saved in the browser
+function saveTask7(){
+    foodList7 .innerHTML = localStorage.getItem("data1");
+}
+
+// call function
+saveTask7();
+
+// function will allow to delete or cross out a tast
+foodList8 .addEventListener("click", function(e){
+    // if LI is clicked, toggle the checked css to turn on and off
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle("completebox");
+        // save the data so information will be saved after refreshing
+        maintainTask8()
+    }
+    // if span (x) is clicked, remove task
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        // save the data so information will be saved after refreshing
+        maintainTask8()
+    }
+}, false);
+
+// show the content to be saved in the browser
+function maintainTask8(){
+    localStorage.setItem("data1",foodList8 .innerHTML);
+}
+
+//show the content to be saved in the browser
+function saveTask8(){
+    foodList8 .innerHTML = localStorage.getItem("data1");
+}
+
+// call function
+saveTask8();
+
+// function will allow to delete or cross out a tast
+foodList9 .addEventListener("click", function(e){
+    // if LI is clicked, toggle the checked css to turn on and off
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle("completebox");
+        // save the data so information will be saved after refreshing
+        maintainTask9()
+    }
+    // if span (x) is clicked, remove task
+    else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        // save the data so information will be saved after refreshing
+        maintainTask9()
+    }
+}, false);
+
+// show the content to be saved in the browser
+function maintainTask9(){
+    localStorage.setItem("data1",foodList9 .innerHTML);
+}
+
+//show the content to be saved in the browser
+function saveTask9(){
+    foodList9 .innerHTML = localStorage.getItem("data1");
+}
+
+// call function
+saveTask9();
