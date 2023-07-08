@@ -385,3 +385,17 @@ ul li span:hover{
     color: gray;
 
 }
+.main{
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 50wv;
+    height: 100vh;
+    display:block;
+    object-fit: cover;
+    object-position: center;
+}
