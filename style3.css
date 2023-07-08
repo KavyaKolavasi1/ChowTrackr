@@ -10,7 +10,7 @@ body{
 
 }
 
-.wrapper1{
+.wrapper4{
     width: 100%;
     height: auto;
     display: flex;
@@ -18,21 +18,21 @@ body{
 
 }
 
-.wrapper2{
+.wrapper5{
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 
 }
-.wrapper3{
+.wrapper6{
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 
 }
-.foodorder1{
+.foodorder10{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -44,7 +44,7 @@ body{
 
 }
 
-.foodorder1 h2{
+.foodorder10 h2{
     color: #4b0dc0;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ body{
   
   }
 
-  .foodorder2{
+  .foodorder11{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -66,7 +66,7 @@ body{
 
 }
 
-.foodorder2 h2{
+.foodorder11 h2{
     color: #c00d84;
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@ body{
   
   }
 
-  .foodorder3{
+  .foodorder12{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -85,7 +85,7 @@ body{
 
 }
 
-.foodorder3 h2{
+.foodorder12 h2{
     color: #077059;
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@ body{
   }
 
 
-.foodorder4{
+.foodorder13{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -106,7 +106,7 @@ body{
 
 }
 
-.foodorder4 h2{
+.foodorder13 h2{
     color: #c00d0d;
     display: flex;
     align-items: center;
@@ -114,7 +114,7 @@ body{
   
   }
 
-  .foodorder5{
+  .foodorder14{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -128,14 +128,14 @@ body{
 
 }
 
-.foodorder5 h2{
+.foodorder14 h2{
     color: #c95511;
     align-items: center;
     margin-bottom: 20px;
   
   }
 
-  .foodorder6{
+  .foodorder15{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -146,7 +146,7 @@ body{
 
 }
 
-.foodorder6 h2{
+.foodorder15 h2{
     color: #740847;
     display: flex;
     align-items: center;
@@ -154,7 +154,7 @@ body{
   
   }
 
-.foodorder7{
+.foodorder16{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -166,7 +166,7 @@ body{
 
 }
 
-.foodorder7 h2{
+.foodorder16 h2{
     color: #054226;
     display: flex;
     align-items: center;
@@ -174,7 +174,7 @@ body{
   
   }
 
-  .foodorder8{
+  .foodorder17{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -188,7 +188,7 @@ body{
 
 }
 
-.foodorder8 h2{
+.foodorder17 h2{
     color: #323cca;
     display: flex;
     align-items: center;
@@ -196,7 +196,7 @@ body{
   
   }
 
-  .foodorder9{
+  .foodorder18{
     width: 30%;
     background: #fff;
     margin: 100px auto 20px;
@@ -207,7 +207,7 @@ body{
 
 }
 
-.foodorder9 h2{
+.foodorder18 h2{
     color: #13702a;
     display: flex;
     align-items: center;
@@ -238,14 +238,14 @@ button{
     border: none;
     outline: none;
     padding: 20px 50px;
-    background:#d7f048;
+    background:#d871f1;
     color: #070105;
     font-size: 20px;
     cursor: pointer;
     border-radius: 40px;
 }
 
-.wrapper1 ul li {
+.wrapper4 ul li {
     list-style:none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -256,7 +256,7 @@ button{
 }
 
 
-.wrapper1 li::before{
+.wrapper4 li::before{
     content: '';
     position: absolute;
     height:28px;
@@ -270,7 +270,7 @@ button{
 
 }
 
-.wrapper2 ul li {
+.wrapper5 ul li {
     list-style:none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -281,7 +281,7 @@ button{
 }
 
 
-.wrapper2 li::before{
+.wrapper5 li::before{
     content: '';
     position: absolute;
     height:28px;
@@ -295,7 +295,7 @@ button{
 
 }
 
-.wrapper3 ul li {
+.wrapper6 ul li {
     list-style:none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -306,7 +306,7 @@ button{
 }
 
 
-.wrapper3 li::before{
+.wrapper6 li::before{
     content: '';
     position: absolute;
     height:28px;
