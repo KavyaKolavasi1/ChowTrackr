@@ -26,7 +26,7 @@ body{
 
 .heading p {
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: bold;
     margin-left: 20px;
     text-align: center;
@@ -48,6 +48,7 @@ body{
     flex: 0 50%;
     max-width: 50%;
     height: auto;
+    border-radius: 10%;
 
 }
 
@@ -63,10 +64,19 @@ body{
 
 .content ul{
     font-size: 20px;
-    line-height:1.5;
+    line-height:2.0;
     margin:0px;
     list-style-position: inside;
     font-weight: bold;
+    text-align: left;
+    display: inline-block; 
+}
+
+.content1 ul{
+    list-style-type: decimal;
+}
+
+.content2{
     font-style: italic;
 }
 
@@ -102,6 +112,7 @@ body{
    font-size: 25px;
    font-weight: bold;
    margin-right: 100px;
+   text-decoration: none;
 
 }
 
