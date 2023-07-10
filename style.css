@@ -387,12 +387,22 @@ ul li span:hover{
 }
 
 img{
-    width: 65%;
+    width: 50%;
     height: 100vh;
     display:block;
     object-fit: cover;
     object-position: center;
     margin-left: 0 ;
+}
+
+.slogan p{
+    font-size: 35px;
+    font-style: italic;
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    text-align: center;
 }
 
 .left {
@@ -414,8 +424,8 @@ img{
   }
   
   .right p {
-    color: #110f0f;
-    font-size: xx-large;
+    color: darkslategray;
+    font-size: 50px;
     font-weight: 1000;
     font: oblique ;
 
