@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">ChowTrackr</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>  
+                <li><a href="about.html">About</a></li>  
+                <li><a href="orderTracker1.html">Order Tracker 1</a></li>   
+                <li><a href="orderTracker2.html">Order Tracker 2</a></li>  
+                <li><a href="delivery.html">Delivery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="owe">
+            <h1>What You Owe!</h1>
+            <input id="oweInput"> 
+            <button id="button_cost">Submit</button>
+            <ul id="costList"></ul>
+        </div>
+    </div>
+
+    <style>
+        body { background: darkslategray; }
+        .owe { text-align: center; color: white; margin-top: 50px;}
+        .navbar {
+            background: rgb(41, 131, 138);
+            height: 80px;
+            width: 100%;
+            font-family: calibri;
+            border-radius: 10px;
+        }
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 50px;
+            font-weight: 400;
+            color: white;
+            margin-left: 25px;
+        }
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar li a {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 100px;
+            text-decoration: none;
+        }
+        .navbar li a:hover {
+            background: none;
+            color: gray;
+        }
+        img {
+            width: 65%;
+            height: 100vh;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+            margin-left: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+        ul li span {
+            margin-left: 5px;
+            font-size: 50px;
+            color: #a52828;
+            cursor: pointer;
+        }
+
+        ul li span:hover {
+            background: #edeef0;
+        }
+
+    </style>
+
+    <script>
+        const costList1 = document.getElementById("costList");
+        const oweInput1 = document.getElementById("oweInput");
+
+        document.getElementById("button_cost").addEventListener("click", addCost);
+
+        function addCost() {
+            if (oweInput1.value === '') {
+                alert("Please write something!");
+            } else {
+                let li = document.createElement("li");
+                li.innerHTML = oweInput1.value;
+                costList1.appendChild(li);
+            
+                let span = document.createElement('span');
+                span.innerHTML = "\u00d7";
+                li.appendChild(span);
+            }
+
+            oweInput1.value = '';
+            maintainTask23();
+        }
+
+        costList1.addEventListener("click", function(e) {
+            if (e.target.tagName === "SPAN") {
+                e.target.parentElement.remove();
+                maintainTask23();
+            }
+        });
+
+        function maintainTask23() {
+            localStorage.setItem("data23", costList1.innerHTML);
+        }
+
+        function saveTask23() {
+            costList1.innerHTML = localStorage.getItem("data23");
+        }
+
+        saveTask23();
+    </script>
+</body>
+</html>
