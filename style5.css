@@ -1,0 +1,113 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+body{
+    background: linear-gradient(135deg,#77bcce,#c6cf4aa9);
+
+}
+
+.heading{
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.heading h1{
+    font-size: 50px;
+    color: navy;
+    margin-bottom: 30px;
+
+}
+
+.heading p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block; 
+    padding-left: 40px;
+    padding-right: 40px;
+    font-style: italic;
+  }
+
+.about-us{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin:auto;
+
+}
+
+.about-us img{
+    flex: 0 50%;
+    max-width: 50%;
+    height: auto;
+
+}
+
+.content{
+    padding: 35px;
+    }
+.content h2{
+    font-size: 40px;
+    margin: 50px 0 20px;
+    color: navy;
+
+}
+
+.content ul{
+    font-size: 20px;
+    line-height:1.5;
+    margin:0px;
+    list-style-position: inside;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.navbar{
+    background: rgb(41, 131, 138);
+    height: 80px;
+    width: 100%;
+    font-family: calibri;
+    border-radius: 10px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size:  50px;
+    font-weight: 400;
+    color: white;
+    margin-left: 25px;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar li a{
+   color:white;
+   font-size: 25px;
+   font-weight: bold;
+   margin-right: 100px;
+
+}
+
+.navbar li a:hover{
+    background: none;
+    color: gray;
+
+}
+

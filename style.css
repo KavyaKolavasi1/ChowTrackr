@@ -402,12 +402,21 @@ img{
     justify-content: flex-start;
   }
 
-.main {
+  .main {
+    position: relative;
+  }
+  
+  .right {
+    position: absolute;
+    top: 40%;
+    right: 6%;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.right p{
-    color:#110f0f;
-}
+  }
+  
+  .right p {
+    color: #110f0f;
+    font-size: xx-large;
+    font-weight: 1000;
+    font: oblique ;
+
+  }
