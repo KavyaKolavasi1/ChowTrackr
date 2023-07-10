@@ -15,6 +15,7 @@
           <li><a href="about.html">About</a></li>  
           <li><a href="orderTracker1.html">Order Tracker 1</a></li>   
           <li><a href="orderTracker2.html">Order Tracker 2</a></li>  
+          <li><a href="delivery.html">Delivery</a></li>
         </ul>
         </div>
     </nav>
@@ -138,63 +139,63 @@ img{
             let ETA = document.querySelector("#ETA");
             let message = document.querySelector("#ETAmessage");
             ETAmessage.innerHTML = "Current ETA: " + ETA.value;
-            maintainTask1()
+            maintainTask19()
 
         }
 
         // show the content to be saved in the browser
-        function maintainTask1(){
-            localStorage.setItem("data",ETAmessage .innerHTML);
+        function maintainTask19(){
+            localStorage.setItem("data19",ETAmessage .innerHTML);
         }
 
         //show the content to be saved in the browser
-        function saveTask1(){
-            ETAmessage .innerHTML = localStorage.getItem("data");
+        function saveTask19(){
+            ETAmessage .innerHTML = localStorage.getItem("data19");
         }
 
         // call function
-        saveTask1();
+        saveTask19();
 
         function myFunction1() {
             let payment = document.querySelector("#payment");
             let message = document.querySelector("#paymentmessage");
             paymentmessage.innerHTML = " Pay Me At: " + payment.value;
-            maintainTask2()
+            maintainTask20()
         }
 
         // show the content to be saved in the browser
-        function maintainTask2(){
-            localStorage.setItem("data1",paymentmessage .innerHTML);
+        function maintainTask20(){
+            localStorage.setItem("data20",paymentmessage .innerHTML);
         }
 
         //show the content to be saved in the browser
-        function saveTask2(){
-            paymentmessage .innerHTML = localStorage.getItem("data1");
+        function saveTask20(){
+            paymentmessage .innerHTML = localStorage.getItem("data20");
         }
 
         // call function
-        saveTask2();
+        saveTask20();
 
         function myFunction2() {
             let vendor = document.querySelector("#vendor");
             let message = document.querySelector("#vendormessage");
-            vendormessage.innerHTML = " Method " + vendor.value;
-            maintainTask3()
+            vendormessage.innerHTML = " Method: " + vendor.value;
+            maintainTask21()
 
         }
 
         // show the content to be saved in the browser
-        function maintainTask3(){
-            localStorage.setItem("data3",vendormessage .innerHTML);
+        function maintainTask21(){
+            localStorage.setItem("data21",vendormessage .innerHTML);
         }
 
         //show the content to be saved in the browser
-        function saveTask3(){
-            vendormessage .innerHTML = localStorage.getItem("data3");
+        function saveTask21(){
+            vendormessage .innerHTML = localStorage.getItem("data21");
         }
 
         // call function
-        saveTask3();
+        saveTask21();
 
         
 
