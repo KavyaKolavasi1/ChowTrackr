@@ -6,8 +6,20 @@
     <title>Delivery</title>
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">ChowTrackr</a></div>
 
+        <ul>
+          <li><a href="home.html">Home</a></li>  
+          <li><a href="about.html">About</a></li>  
+          <li><a href="orderTracker1.html">Order Tracker 1</a></li>   
+          <li><a href="orderTracker2.html">Order Tracker 2</a></li>  
+        </ul>
+        </div>
+    </nav>
+
+    <div class="container">
     
         <div class="eta">
             <h1>What is the ETA?</h1>
@@ -35,33 +47,156 @@
 
     <style>
         body{background: darkslategray}
-        .container{display: flex; justify-content: space-between; padding: 20px;
+        .container{display: flex; justify-content: space-between; padding: 50px; margin: 50px;
         }
         .eta{ text-align: left; color:white; margin-left: 20px}
         .payment{ text-align: right; color:white;}
         .vendor{ text-align: center; color:white;}
+        .navbar{
+    background: rgb(41, 131, 138);
+    height: 80px;
+    width: 100%;
+    font-family: calibri;
+    border-radius: 10px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size:  50px;
+    font-weight: 400;
+    color: white;
+    margin-left: 25px;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar li a{
+   color:white;
+   font-size: 25px;
+   font-weight: bold;
+   margin-right: 100px;
+   text-decoration: none;
+
+}
+
+.navbar li a:hover{
+    background: none;
+    color: gray;
+
+}
+
+img{
+    width: 65%;
+    height: 100vh;
+    display:block;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 0 ;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .main {
+    position: relative;
+  }
+  
+  .right {
+    position: absolute;
+    top: 40%;
+    right: 6%;
+    text-align: center;
+  }
+  
+  .right p {
+    color: #110f0f;
+    font-size: xx-large;
+    font-weight: 1000;
+    font: oblique ;
+
+  }
     </style>
 
     <script>
+        document.getElementById("ETAmessage").addEventListener("click", myFunction);
+        document.getElementById("vendormessage").addEventListener("click", myFunction2);
+        document.getElementById("paymentmessage").addEventListener("click", myFunction1);
+   
         function myFunction()  {
             let ETA = document.querySelector("#ETA");
             let message = document.querySelector("#ETAmessage");
-            message.innerHTML = "Current ETA: " + ETA.value;
+            ETAmessage.innerHTML = "Current ETA: " + ETA.value;
+            maintainTask1()
 
         }
+
+        // show the content to be saved in the browser
+        function maintainTask1(){
+            localStorage.setItem("data",ETAmessage .innerHTML);
+        }
+
+        //show the content to be saved in the browser
+        function saveTask1(){
+            ETAmessage .innerHTML = localStorage.getItem("data");
+        }
+
+        // call function
+        saveTask1();
 
         function myFunction1() {
-            let payment = document.querySelector("payment");
+            let payment = document.querySelector("#payment");
             let message = document.querySelector("#paymentmessage");
-            message.innerHTML = " Pay Me At: " + payment.value;
+            paymentmessage.innerHTML = " Pay Me At: " + payment.value;
+            maintainTask2()
         }
+
+        // show the content to be saved in the browser
+        function maintainTask2(){
+            localStorage.setItem("data1",paymentmessage .innerHTML);
+        }
+
+        //show the content to be saved in the browser
+        function saveTask2(){
+            paymentmessage .innerHTML = localStorage.getItem("data1");
+        }
+
+        // call function
+        saveTask2();
 
         function myFunction2() {
-            let vendor = document.querySelector("vendor");
+            let vendor = document.querySelector("#vendor");
             let message = document.querySelector("#vendormessage");
-            message.innerHTML = " Pay Me At: " + vendor.value;
+            vendormessage.innerHTML = " Method " + vendor.value;
+            maintainTask3()
 
         }
+
+        // show the content to be saved in the browser
+        function maintainTask3(){
+            localStorage.setItem("data3",vendormessage .innerHTML);
+        }
+
+        //show the content to be saved in the browser
+        function saveTask3(){
+            vendormessage .innerHTML = localStorage.getItem("data3");
+        }
+
+        // call function
+        saveTask3();
+
+        
 
     </script>
 </body>
