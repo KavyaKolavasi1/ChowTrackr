@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: calibri;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body{
 }
 
 .heading p {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 40px;
     font-weight: bold;
     margin-left: 20px;
@@ -63,8 +63,7 @@ body{
 }
 
 .content ul{
-    font-size: 20px;
-    line-height:2.0;
+    font-size: 22px;
     margin:0px;
     list-style-position: inside;
     font-weight: bold;
@@ -74,10 +73,13 @@ body{
 
 .content1 ul{
     list-style-type: decimal;
+    color: rgb(146, 5, 29);
+    line-height:1.5;
 }
 
-.content2{
+.content2 ul{
     font-style: italic;
+    line-height:2.0;
 }
 
 
