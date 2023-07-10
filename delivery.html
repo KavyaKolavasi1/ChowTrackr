@@ -6,19 +6,60 @@
     <title>Delivery</title>
 </head>
 <body>
-    <h1>What is the ETA?</h1>
-    <input id="ETA"> <br> <br>
-    <button onclick="myFunction()">Submit</button>
-    <h1 id="message"></h1>
+    <div class="container">
+
+    
+        <div class="eta">
+            <h1>What is the ETA?</h1>
+            <input id="ETA"> <br> <br>
+            <button onclick="myFunction()">Submit</button>
+            <h1 id="ETAmessage"></h1>
+        </div>
+        
+        <div class="vendor">
+            <h1>Enter Payment Method Here!</h1>
+            <input id="vendor"> <br> <br>
+            <button onclick="myFunction2()">Submit</button>
+            <h1 id="vendormessage"></h1>
+        </div>
+
+        <div class="payment">
+            <h1>Yout Can Pay Me @</h1>
+            <input id="payment"> <br> <br>
+            <button onclick="myFunction1()">Submit</button>
+            <h1 id="paymentmessage"></h1>
+
+        </div>
+  
+    </div>
 
     <style>
-        body{background: darkslategray; text-align: center; color:white}
+        body{background: darkslategray}
+        .container{display: flex; justify-content: space-between; padding: 20px;
+        }
+        .eta{ text-align: left; color:white; margin-left: 20px}
+        .payment{ text-align: right; color:white;}
+        .vendor{ text-align: center; color:white;}
     </style>
 
     <script>
         function myFunction()  {
             let ETA = document.querySelector("#ETA");
-            let message = document.querySelector("#message");
+            let message = document.querySelector("#ETAmessage");
+            message.innerHTML = "Current ETA: " + ETA.value;
+
+        }
+
+        function myFunction1() {
+            let payment = document.querySelector("payment");
+            let message = document.querySelector("#paymentmessage");
+            message.innerHTML = " Pay Me At: " + payment.value;
+        }
+
+        function myFunction2() {
+            let vendor = document.querySelector("vendor");
+            let message = document.querySelector("#vendormessage");
+            message.innerHTML = " Pay Me At: " + vendor.value;
 
         }
 
