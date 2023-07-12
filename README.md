@@ -12,7 +12,7 @@ We would on many occasions order lunch during office hours for > 7 people. More 
 # [Click Here for Live Demo!](https://chowtrackr.netlify.app/index.html)
 
 
-### Shown Below are visual displays of ChowTrackr.
+### Shown Below are visual displays of ChowTrackr. ChowTrackr created using HTML, CSS, and Javascript.
 
 ![website_pic_1](https://github.com/KavyaKolavasi1/ToDo-List/assets/135289399/e4c9d2d2-156e-445e-bc7b-cbf95343c063)
 
